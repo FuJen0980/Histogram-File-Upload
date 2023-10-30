@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogram Generator</title>
+    <link rel="stylesheet" href="histogram.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src = "./calculate.js" defer></script>
+</head>
+<body>
+    <header>Histogram Generator</header>
+    <main>
+        <div class="bounds">
+            <table class="boundsTable">
+                <tr>
+                    <td>Max</td>
+                    <td><input type="number" class="boundsInput"></td>
+                </tr>
+                <tr>
+                    <td>A+</td>
+                    <td><input type="number"  class="boundsInput"></td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td><input type="number"  class="boundsInput"></td>
+                </tr>
+                <tr>
+                    <td>A-</td>
+                    <td><input type="number"  class="boundsInput"></td>
+                </tr>
+                <tr>
+                    <td>B+</td>
+                    <td><input type="number"  class="boundsInput"></td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td><input type="number"  class="boundsInput"></td>
+                </tr>
+                <tr>
+                    <td>B-</td>
+                    <td><input type="number"  class="boundsInput"></td>
+                </tr>
+                <tr>
+                    <td>C+</td>
+                    <td><input type="number"  class="boundsInput"></td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td><input type="number"  class="boundsInput"></td>
+                </tr>
+                <tr>
+                    <td>C-</td>
+                    <td><input type="number"  class="boundsInput"></td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td><input type="number"  class="boundsInput"></td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td><input type="number"  class="boundsInput"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="histogram">
+            <span class="mb-3">
+                <label for="formFile" class="form-label"></label>
+                <input class="form-control" type="file" id="formFile">
+                <span id="errorMessage">Error Message</span>
+            </span>
+            <table class="x-axis">
+                <tr>
+                    <hr>
+                    <td>
+                        <span class="count">0</span>
+                        <div class="bar"></div>
+                        <hr class="gradeAxis">
+                        <span class="gradeAxis">A+</span>
+                    </td>
+                    <td>
+                        <span class="count">0</span>
+                        <div class="bar"></div>
+                        <hr class="gradeAxis">
+                        <span class="gradeAxis">A</span>
+                    </td>
+                    <td>
+                        <span class="count">0</span>
+                        <div class="bar"></div>
+                        <hr class="gradeAxis">
+                        <span class="gradeAxis">A-</span>
+                    </td>
+                    <td>
+                        <span class="count">0</span>
+                        <div class="bar"></div>
+                        <hr class="gradeAxis">
+                        <span class="gradeAxis">B+</span>
+                    </td>
+                    <td>
+                        <span class="count">0</span>
+                        <div class="bar"></div>
+                        <hr class="gradeAxis">
+                        <span class="gradeAxis">B</span>
+                    </td>
+                    <td>
+                        <span class="count">0</span>
+                        <div class="bar"></div>
+                        <hr class="gradeAxis">
+                        <span class="gradeAxis">B-</span>
+                    </td>
+                    <td>
+                        <span class="count">0</span>
+                        <div class="bar"></div>
+                        <hr class="gradeAxis">
+                        <span class="gradeAxis">C+</span>
+                    </td>
+                    <td>
+                        <span class="count">0</span>
+                        <div class="bar"></div>
+                        <hr class="gradeAxis">
+                        <span class="gradeAxis">C</span>
+                    </td>
+                    <td>
+                        <span class="count">0</span>
+                        <div class="bar"></div>
+                        <hr class="gradeAxis">
+                        <span class="gradeAxis">C-</span>
+                    </td>
+                    <td>
+                        <span class="count">0</span>
+                        <div class="bar"></div>
+                        <hr class="gradeAxis">
+                        <span class="gradeAxis">D</span>
+                    </td>
+                    <td>
+                        <span class="count">0</span>
+                        <div class="bar"></div>
+                        <hr class="gradeAxis">
+                        <span class="gradeAxis">F</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="stats">
+            <table class="statsTable">
+                <tr>
+                    <td class="statsTitle">Highest:</td>
+                    <td class="statsContent"></td>
+                </tr>
+                <tr>
+                    <td class="statsTitle">Lowest:</td>
+                    <td class="statsContent"></td>
+                </tr>
+                <tr>
+                    <td class="statsTitle">Mean:</td>
+                    <td class="statsContent"></td>
+                </tr>
+                <tr>
+                    <td class="statsTitle">Median:</td>
+                    <td class="statsContent"></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
